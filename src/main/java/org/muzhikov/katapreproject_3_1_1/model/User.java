@@ -8,56 +8,56 @@ public class User {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long _id;
+	private Long id;
 	
 	@Column(name = "first_name")
-	private String _firstName;
+	private String firstName;
 	
 	@Column(name = "last_name")
-	private String _lastName;
+	private String lastName;
 	
 	@Column(name = "email")
-	private String _email;
+	private String email;
 	
 	public User() {
 	
 	}
 	
-	public User(String _firstName, String _lastName, String _email) {
-		this._firstName = _firstName;
-		this._lastName = _lastName;
-		this._email = _email;
+	public User(String firstName, String lastName, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
 	}
 	
-	public Long get_id() {
-		return _id;
+	public Long getId() {
+		return id;
 	}
 	
-	public void set_id(Long _id) {
-		this._id = _id;
+	public void setId(Long id) {
+		this.id = id;
 	}
 	
-	public String get_firstName() {
-		return _firstName;
+	public String getFirstName() {
+		return firstName;
 	}
 	
-	public void set_firstName(String _firstName) {
-		this._firstName = _firstName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	
-	public String get_lastName() {
-		return _lastName;
+	public String getLastName() {
+		return lastName;
 	}
 	
-	public void set_lastName(String _lastName) {
-		this._lastName = _lastName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	
-	public String get_email() {
-		return _email;
+	public String getEmail() {
+		return email;
 	}
 	
-	public void set_email(String _email) {
-		this._email = _email;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 }
